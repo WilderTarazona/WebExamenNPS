@@ -1,0 +1,22 @@
+<div class="question">
+    <mat-card class="question__card">
+        <mat-card-title class="question__card__title">¿Cuán probable es que recomiende el producto o servicio a un
+            familiar o
+            amigo?
+        </mat-card-title>
+        <mat-card-content>
+            <mat-radio-group aria-labelledby="example-radio-group-label" class="question__card__group"
+                [(ngModel)]="numberSelected">
+                <mat-radio-button class="question__card__radio-button" *ngFor="let season of seasons" [value]="season">
+                    {{season}}
+                </mat-radio-button>
+            </mat-radio-group>
+
+        </mat-card-content>
+        <mat-card-subtitle class="question__card__subtitle">Calificación: {{numberSelected}}</mat-card-subtitle>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="qualify()"
+                [disabled]="!numberSelected || voted">Calificar</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

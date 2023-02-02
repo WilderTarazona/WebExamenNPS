@@ -1,0 +1,15 @@
+.signin {
+  background-color: #59c9fc;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__card {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    &__title {
+      margin: 10px 0 20px;
+    }
+  }
+}

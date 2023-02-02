@@ -1,0 +1,29 @@
+<!--
+<p>
+  Promotores: 2
+  Neutros: 1
+  Detractores: 1
+
+  NPS = (2 - 1) / (4) x 100 = 25
+
+</p>-->
+
+<div class="report">
+  <mat-card class="report__card">
+    <mat-card-title class="report__card__title">Resultado del NPS</mat-card-title>
+    <mat-card-content class="report__card__content">
+      <mat-card-subtitle class="report__card__subtitle" name="fieldName" ngDefaultControl
+        [(ngModel)]="cantidadPromotores">Cantidad de promotores: {{ cantidadPromotores }}</mat-card-subtitle>
+      <mat-card-subtitle class="report__card__subtitle" name="fieldName" ngDefaultControl
+        [(ngModel)]="cantidadNeutros">Cantidad de neutros: {{ cantidadNeutros }}</mat-card-subtitle>
+      <mat-card-subtitle class="report__card__subtitle" name="fieldName" ngDefaultControl
+        [(ngModel)]="cantidadDetractores">Cantidad de detractores: {{ cantidadDetractores }}</mat-card-subtitle>
+      <mat-card-subtitle class="report__card__subtitle" name="fieldName" ngDefaultControl
+        [(ngModel)]="cantidadEncuestados">Total de encuestados:
+        {{ cantidadEncuestados }}
+      </mat-card-subtitle>
+      <mat-card-subtitle class="report__card__subtitle" name="fieldName" ngDefaultControl [(ngModel)]="nps">Resultado:
+        {{ nps }}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+</div>

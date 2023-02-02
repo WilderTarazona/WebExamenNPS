@@ -1,0 +1,25 @@
+.report {
+  height: 100%;
+  background-color: #59c9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__card {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    &__title {
+      margin: 10px 0 20px;
+    }
+    &__subtitle {
+      margin: 10px 0;
+    }
+    &__content {
+      text-align: start;
+    }
+  }
+}
